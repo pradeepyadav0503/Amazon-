@@ -36,7 +36,7 @@ function Deals() {
   return (
     <div id="deals-section" className="bg-gray-100 mt-10 py-3">
       <p className="text-2xl font-bold text-center mb-10">Hot Deals 🔥</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 w-[95%] mx-auto">
+      <div className="w-[95%] mx-auto grid grid-cols-4 justify-items-center items-center">
         {allProducts.map((item) => (
           <div key={item.id} className="space-y-2 p-4 rounded-lg">
             <div className="bg-white w-56 h-64 flex justify-center items-center rounded-xl aspect-[3/2] p-8 relative group">
@@ -71,7 +71,7 @@ function Deals() {
               </p>
             </div>
             <p className="text-sm font-base">{item.category.toUpperCase()}</p>
-            <div className="flex justify-between gap-2">
+            <div className="flex gap-2">
               <div className="flex">
                 <img className="w-4" src={rating} alt="" />
                 <img className="w-4" src={rating} alt="" />
